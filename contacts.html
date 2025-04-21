@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aly's Haven - Contacts</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inknut+Antiqua:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.30.0/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <h1 class="logo">Aly's Haven</h1>
+        <nav class="main-nav">
+          <a href="home.html" class="nav-item">Home</a>
+          <a href="ourstory.html" class="nav-item">Our Story</a>
+          <a href="coffee.html" class="nav-item">Coffee</a>
+          <a href="pastries.html" class="nav-item">Pastries</a>
+          <a href="contacts.html" class="nav-item">Contacts</a>
+          <div class="search-box">
+            <span class="search-text">Search</span>
+            <div class="search-icon">
+              <div>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 4L4 12M4 4L12 12"
+                    stroke="#1E1E1E"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <i class="ti ti-menu-2"></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content" role="main">
+        <section class="about-contact-section" aria-labelledby="about-title">
+            <div class="content-container">
+                <div class="text-column">
+                    <article class="about-content">
+                        <h2 id="about-title" class="section-title">About Us</h2>
+                        <h3 class="welcome-title">Welcome to Aly's Haven</h3>
+                        <p class="about-description">
+                            Misola and Aly shared a dream—to open a café where people could gather, unwind, and enjoy quality beverages and pastries. With dedication, hard work, and careful saving, they turned that vision into reality. Their café, Aly's Haven, is not just a business but a reflection of their journey together—a place where their passion for great food, warm hospitality, and meaningful moments comes to life. Named after Jules Alyssandria, Aly's Haven symbolizes the comfort, love, and dedication that built it, inviting every guest to be part of their story with each cup served.
+                        </p>
+                    </article>
+                </div>
+                <div class="image-column">
+                    <img src="img/contact/contactbackground.png" alt="Interior view of Aly's Haven café" class="cafe-image">
+                </div>
+            </div>
+        </section>
+
+        <h2 id="contact-title" class="contact-title">Contact Us</h2>
+        <section class="contact-form-section" aria-labelledby="contact-title">
+            <form class="contact-form" aria-label="Contact form">
+                <div class="form-group">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" id="firstName" class="form-input" value="Jane" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" id="lastName" class="form-input" value="Smitherton" required>
+                </div>
+                <div class="form-group full-width">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" id="email" class="form-input" value="alyheaven@gmail.com" required>
+                </div>
+                <div class="form-group full-width">
+                    <label for="message" class="form-label">Your message</label>
+                    <textarea id="message" class="form-input message-input" placeholder="Enter your question or message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <h3 class="footer-title">About us:</h3>
+            <p class="footer-text">
+              Emmanuel Jr. D. Misola dreamed of opening his own café with his
+              girlfriend. Through dedication and careful saving, he was able to
+              turn that vision into reality—creating a café that offers
+              exceptional beverages and pastries. As a tribute to their journey,
+              the café reflects their hard work and passion, sharing a piece of
+              their story with every cup served.
+            </p>
+            <a href="#about-title"> <button class="btn btn-primary footer-btn">Read More</button></a>
+          </div>
+          <div class="footer-social">
+            <h3 class="footer-title">Social Media:</h3>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    <img src="img/home/facebook.svg" alt="Facebook" class="social-icon" />
+                  </a>
+                  <a href="#" aria-label="Instagram">
+                    <img src="img/home/instagram.svg" alt="Instagram" class="social-icon" />
+                  </a>
+                  <a href="#" aria-label="Youtube">
+                    <img src="img/home/youtube.svg" alt="Twitter" class="social-icon" />
+                  </a>
+                  <a href="#" aria-label="LinkedIn">
+                    <img src="img/home/linkedin.svg" alt="LinkedIn" class="social-icon" />
+                  </a>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <h3 class="footer-title">Contact Info:</h3>
+            <p class="footer-email">Email: emmanuel45@gmail.com</p>
+          </div>
+        </div>
+          <div class="footer-bottom">
+            <p>© 2024 Cafe-Lab. All Rights Reserved. | 
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Service</a>
+            </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+

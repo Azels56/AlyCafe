@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aly's Haven - Coffee, Comfort Food, Community</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inknut+Antiqua:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.30.0/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <h1 class="logo">Aly's Haven</h1>
+        <nav class="main-nav">
+          <a href="home.html" class="nav-item">Home</a>
+          <a href="ourstory.html" class="nav-item">Our Story</a>
+          <a href="coffee.html" class="nav-item">Coffee</a>
+          <a href="pastries.html" class="nav-item">Pastries</a>
+          <a href="contacts.html" class="nav-item">Contacts</a>
+          <div class="search-box">
+            <span class="search-text">Search</span>
+            <div class="search-icon">
+              <div>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 4L4 12M4 4L12 12"
+                    stroke="#1E1E1E"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <i class="ti ti-menu-2"></i>
+        </button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img src="img/home/homebackground.png" alt="Hero Image" class="hero-image" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2 class="hero-title">Coffee. Comfort Food. Community</h2>
+          <p class="hero-description">
+            Aly's Haven is more than a café; it's a sanctuary where the art of
+            coffee meets the heart of the community. We take pride in crafting
+            the finest coffee, accompanied by delectable baked goods and
+            comforting meals. Beyond serving exceptional flavors, our mission is
+            to nurture a welcoming space where creativity thrives, ideas flow,
+            and connections are made.
+          </p>
+        </div>
+        <div class="hero-cta">
+          <button class="btn btn-primary">Know More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="sneakpeaks">
+      <h2 class="section-title">Sneakpeaks</h2>
+      <div class="sneakpeaks-grid">
+        <article class="food-item">
+          <img src="img/home/strawberryhandpies.png" alt="Strawberry Hand Pies" class="food-image" />
+          <div class="food-details">
+            <h3 class="food-title">Strawberry Hand Pies</h3>
+            <p class="food-description">
+              A flaky homemade pastry dough is the start of this easy dessert.
+            </p>
+          </div>
+        </article>
+        <article class="food-item">
+          <img src="img/home/nuttyhoneyminirolls.png" class="food-image" />
+          <div class="food-details">
+            <h3 class="food-title">Nutty Honey Mini Rolls</h3>
+            <p class="food-description">
+              These nutty, honey treats have "cute" written all over them.
+            </p>
+          </div>
+        </article>
+        <article class="food-item">
+          <img src="img/home/chocolatefilleddonuts.png" alt="Chocolate-Filled Donuts" class="food-image" />
+          <div class="food-details">
+            <h3 class="food-title">Chocolate-Filled Donuts</h3>
+            <p class="food-description">
+              There's nothing like a homemade donut to start your day.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="in-house">
+      <h2 class="section-title">Made and Baked In-House</h2>
+      <div class="in-house-content">
+        <div class="in-house-text">
+          <div class="in-house-item">
+            <h3 class="in-house-subtitle">Moving Forward</h3>
+            <p class="in-house-description">
+              Every drink, dessert is made or baked in-house using premium
+              ingredients.
+            </p>
+          </div>
+          <div class="in-house-item">
+            <h3 class="in-house-subtitle">Recipes</h3>
+            <p class="in-house-description">
+              Our recipes tend to feel familiar yet somehow surprising. We
+              elevate American-style comfort foods concepts, add Filipino hints
+              here and there, and explore whatever tastes amazing.
+            </p>
+          </div>
+        </div>
+        <img src="img/home/bakedgoods.png" alt="Baked goods" class="in-house-image" />
+      </div>
+      <div class="in-house-buttons">
+        <button class="btn btn-primary">Pastries</button>
+        <button class="btn btn-primary">Coffee</button>
+        <button class="btn btn-secondary">About</button>
+      </div>
+    </section>
+
+    <section class="membership">
+      <h2 class="section-title">Membership</h2>
+      <div class="membership-container">
+        <div class="membership-toggle">
+          <button class="toggle-btn toggle-active" id="monthly-toggle">
+            Monthly
+          </button>
+          <button class="toggle-btn" id="yearly-toggle">Yearly</button>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-title">Free</h3>
+              <div class="pricing-amount">
+                <span class="currency">₱</span>
+                <span class="amount">0</span>
+                <span class="period">/ mo</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li class="pricing-feature">Basic WiFi Access (10 Mbps)</li>
+              <li class="pricing-feature">Loyalty Points System</li>
+              <li class="pricing-feature">Monthly Special Offers</li>
+              <li class="pricing-feature">Birthday Perk</li>
+              <li class="pricing-feature">Early Access to New Menu Items</li>
+            </ul>
+            <button class="btn pricing-btn">Buy</button>
+          </div>
+          <div class="pricing-card pricing-card-featured">
+            <div class="pricing-header">
+              <h3 class="pricing-title">Deluxe</h3>
+              <div class="pricing-amount">
+                <span class="currency">₱</span>
+                <span class="amount">1499</span>
+                <span class="period">/ mo</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li class="pricing-feature">Ultra-Fast WiFi (200 Mbps+)</li>
+              <li class="pricing-feature">
+                Unlimited Coffee &amp; Tea Refills
+              </li>
+              <li class="pricing-feature">Exclusive Lounge Access</li>
+              <li class="pricing-feature">20% Discounts</li>
+              <li class="pricing-feature">Priority Service</li>
+            </ul>
+            <button class="btn pricing-btn pricing-btn-featured">Buy</button>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-title">Premium</h3>
+              <div class="pricing-amount">
+                <span class="currency">₱</span>
+                <span class="amount">420</span>
+                <span class="period">/ mo</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li class="pricing-feature">Fast WiFi (100 Mbps)</li>
+              <li class="pricing-feature">2 Refills Per Visit</li>
+              <li class="pricing-feature">Exclusive Member Seating</li>
+              <li class="pricing-feature">10% Discounts</li>
+              <li class="pricing-feature">Birthday Freebie</li>
+            </ul>
+            <button class="btn pricing-btn">Buy</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="affiliations">
+      <div class="affiliations-container">
+        <h2 class="affiliations-title">Other affiliations</h2>
+        <div class="affiliations-buttons">
+          <button class="btn btn-dark">Show</button>
+          <button class="btn btn-light">Their Details</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2 class="section-title">Comments:</h2>
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <blockquote class="testimonial-text">
+            "Absolutely love the coffee here—rich, smooth, and always served
+            with a smile!"
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <svg
+                width="221"
+                height="50"
+                viewBox="0 0 221 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="author-info"
+              >
+                <circle cx="22.5" cy="25" r="22.5" fill="#D9D9D9"></circle>
+                <circle
+                  cx="22.5"
+                  cy="25"
+                  r="22.5"
+                  fill="url(#pattern0_1_910)"
+                ></circle>
+                <text
+                  fill="black"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="Inter"
+                  font-size="16"
+                  font-weight="500"
+                  letter-spacing="0em"
+                >
+                  <tspan x="61" y="17.8182">Crislynar Narvaez</tspan>
+                </text>
+                <text
+                  fill="#828282"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="Inter"
+                  font-size="16"
+                  font-weight="500"
+                  letter-spacing="0em"
+                >
+                  <tspan x="61" y="43.8182">PCU Student</tspan>
+                </text>
+                <defs>
+                  <pattern
+                    id="pattern0_1_910"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_1_910"
+                      transform="translate(0 -0.166667) scale(0.00133333)"
+                    ></use>
+                  </pattern>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <blockquote class="testimonial-text">
+            "The cozy atmosphere and friendly staff make this café a perfect
+            spot to relax and unwind."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <svg
+                width="314"
+                height="50"
+                viewBox="0 0 314 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="author-info"
+              >
+                <circle cx="22.8333" cy="25" r="22.5" fill="#D9D9D9"></circle>
+                <circle
+                  cx="22.8333"
+                  cy="25"
+                  r="22.5"
+                  fill="url(#pattern0_1_917)"
+                ></circle>
+                <text
+                  fill="black"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="Inter"
+                  font-size="16"
+                  font-weight="500"
+                  letter-spacing="0em"
+                >
+                  <tspan x="60" y="17.8182">John Paul M. Narvaez
+                  </tspan>
+                </text>
+                <text
+                  fill="#828282"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="Inter"
+                  font-size="16"
+                  font-weight="500"
+                  letter-spacing="0em"
+                >
+                  <tspan x="61.3333" y="43.8182">PHNS Student</tspan>
+                </text>
+                <defs>
+                  <pattern
+                    id="pattern0_1_917"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_1_917"
+                      transform="translate(0 -0.0388601) scale(0.00518135)"
+                    ></use>
+                  </pattern>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <blockquote class="testimonial-text">
+            "The pastries are incredible! Freshly baked, flaky, and full of
+            flavor. Highly recommend!"
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <svg
+                width="185"
+                height="50"
+                viewBox="0 0 185 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="author-info"
+              >
+                <circle cx="23.1665" cy="25" r="22.5" fill="#D9D9D9"></circle>
+                <circle
+                  cx="23.1665"
+                  cy="25"
+                  r="22.5"
+                  fill="url(#pattern0_1_924)"
+                ></circle>
+                <text
+                  fill="black"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="Inter"
+                  font-size="16"
+                  font-weight="500"
+                  letter-spacing="0em"
+                >
+                  <tspan x="61.6665" y="17.8182">John Paulo Paz</tspan>
+                </text>
+                <text
+                  fill="#828282"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="Inter"
+                  font-size="16"
+                  font-weight="500"
+                  letter-spacing="0em"
+                >
+                  <tspan x="61.6665" y="43.8182">N.U Student</tspan>
+                </text>
+                <defs>
+                  <pattern
+                    id="pattern0_1_924"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_1_924"
+                      transform="translate(0 -0.00251256) scale(0.00502513)"
+                    ></use>
+                  </pattern>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <h3 class="footer-title">About us:</h3>
+            <p class="footer-text">
+              Emmanuel Jr. D. Misola dreamed of opening his own café with his
+              girlfriend. Through dedication and careful saving, he was able to
+              turn that vision into reality—creating a café that offers
+              exceptional beverages and pastries. As a tribute to their journey,
+              the café reflects their hard work and passion, sharing a piece of
+              their story with every cup served.
+            </p>
+            <button class="btn btn-primary footer-btn">Read More</button>
+          </div>
+          <div class="footer-social">
+            <h3 class="footer-title">Social Media:</h3>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    <img src="img/home/facebook.svg" alt="Facebook" class="social-icon" />
+                  </a>
+                  <a href="#" aria-label="Instagram">
+                    <img src="img/home/instagram.svg" alt="Instagram" class="social-icon" />
+                  </a>
+                  <a href="#" aria-label="Youtube">
+                    <img src="img/home/youtube.svg" alt="Twitter" class="social-icon" />
+                  </a>
+                  <a href="#" aria-label="LinkedIn">
+                    <img src="img/home/linkedin.svg" alt="LinkedIn" class="social-icon" />
+                  </a>
+            </div>
+
+          </div>
+          <div class="footer-contact">
+            <h3 class="footer-title">Contact Info:</h3>
+            <p class="footer-email">Email: emmanuel45@gmail.com</p>
+          </div>
+        </div>
+         <div class="footer-bottom">
+            <p>© 2024 Cafe-Lab. All Rights Reserved. | 
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Service</a>
+            </p>
+        </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
